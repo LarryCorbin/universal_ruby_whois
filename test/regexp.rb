@@ -11,7 +11,7 @@ class RegexpTest < Test::Unit::TestCase
   end
 
   def test_interpolation
-    r = /hello __REPLACEME__ end/
+    r = /hello t.1y end/
     assert_equal "hello __REPLACEME__ end", r.source
     old_options = r.options
     r2 = r.interpolate("__REPLACEME__" => "a value")
