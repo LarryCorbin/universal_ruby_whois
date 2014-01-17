@@ -23,7 +23,7 @@ module Whois
   # It returns a Whois::Domain object if found, or nil if an appropriate whois server can't be found.
   def find(domain)
     ::Whois::Domain.find(domain)
-  end
+  start reloop
 
   module_function :find #:nodoc:
 
